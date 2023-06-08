@@ -24,9 +24,9 @@ const Introduction = () => {
   const [text, setText] = useState(text1);
   return (
     <ContainerPage>
-      <div style={{ height: "400px" }}>
+      <div style={{ minHeight: "400px" }}>
         <Row>
-          <Col xl={12}>
+          <Col xl={12} lg={24}>
             <div style={{ padding: "0px 24px" }}>
               <h2
                 style={{
@@ -56,7 +56,7 @@ const Introduction = () => {
               </div>
             </div>
           </Col>
-          <Col xl={12}>
+          <Col xl={12} lg={24} md={24} sm={24} xs={24}>
             <div style={{ padding: "24px" }}>
               <iframe
                 width="100%"
