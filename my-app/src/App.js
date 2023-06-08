@@ -6,6 +6,7 @@ import Nav from "./sections/Nav";
 import Banner from "./sections/Banner";
 import Introduction from "./sections/Introduction";
 import Project from "./sections/Project";
+import ProductStudent from "./sections/ProductStudent";
 function App() {
   return (
     <div className="App">
@@ -14,6 +15,7 @@ function App() {
       <Banner />
       <Introduction />
       <Project />
+      <ProductStudent />
     </div>
   );
 }
