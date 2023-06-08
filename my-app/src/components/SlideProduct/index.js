@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -16,7 +16,11 @@ import ProductStudentCard from "./ProductStudentCard";
 import card1 from "../../shared/images/card1.jpg";
 import card2 from "../../shared/images/card2.jpg";
 import card3 from "../../shared/images/card3.jpg";
-
+import {
+  useWindowSize,
+  useWindowWidth,
+  useWindowHeight,
+} from "@react-hook/window-size";
 const productList = [
   {
     title: " EdTech Design Thinking",
@@ -54,10 +58,24 @@ const productList = [
 ];
 
 export default function SlideProduct({}) {
+  const onlyWidth = useWindowWidth();
+  console.log("width :", onlyWidth);
+  const [perSlide, setPerSlide] = useState(3);
+  useEffect(() => {
+    if (onlyWidth > 843) {
+      setPerSlide(3);
+    }
+    if (onlyWidth < 843) {
+      setPerSlide(2);
+    }
+    if (onlyWidth < 576) {
+      setPerSlide(1);
+    }
+  }, [onlyWidth]);
   return (
     <div>
       <Swiper
-        slidesPerView={3}
+        slidesPerView={perSlide}
         spaceBetween={32}
         freeMode={true}
         pagination={{
