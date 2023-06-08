@@ -28,7 +28,7 @@ const Introduction = () => {
         <Row>
           <Col xl={12} lg={24}>
             <div style={{ padding: "0px 24px" }}>
-              <h2
+              <h1
                 style={{
                   color: "#F3C003",
                   textTransform: "uppercase",
@@ -36,7 +36,7 @@ const Introduction = () => {
                 }}
               >
                 Giới thiệu chung
-              </h2>
+              </h1>
               <div
                 dangerouslySetInnerHTML={{
                   __html: text,
@@ -51,6 +51,7 @@ const Introduction = () => {
                 }}
               >
                 <ButtonCore
+                  text={text == text1 ? "Xem thêm" : "Rút gọn"}
                   onClick={() => setText(text == text1 ? text2 : text1)}
                 />
               </div>

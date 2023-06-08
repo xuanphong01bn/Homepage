@@ -6,7 +6,7 @@ import DropdownNav from "../../components/DropdownNav";
 const Nav = () => {
   return (
     <div style={{ backgroundColor: "#3A454B" }}>
-      <ContainerPage>
+      <ContainerPage isHeaderNav={true}>
         <div
           style={{
             height: "45px",

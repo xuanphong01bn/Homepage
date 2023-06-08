@@ -4,7 +4,7 @@ import { Image, Input } from "antd";
 import logo from "../../shared/images/SchoolName.png";
 const Header = () => {
   return (
-    <ContainerPage>
+    <ContainerPage isHeaderNav={true}>
       <div
         style={{
           height: "100px",

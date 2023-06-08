@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./styles.module.scss";
 const ButtonCore = (props) => {
+  const { text } = props;
   return (
     <div style={{ display: "inline-block" }} {...props}>
       <div
@@ -14,7 +15,7 @@ const ButtonCore = (props) => {
         }}
         className={styles.button}
       >
-        Xem thêm
+        {text || "Xem thêm"}
       </div>
     </div>
   );
