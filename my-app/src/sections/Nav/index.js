@@ -1,4 +1,5 @@
 import React from "react";
+import './index.css'
 import ContainerPage from "../../components/ContainerPage";
 import { HomeOutlined, SearchOutlined } from "@ant-design/icons";
 import styles from "./styles.module.scss";

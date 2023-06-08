@@ -24,7 +24,7 @@ const Header = () => {
             <Input placeholder="Tên tài khoản" />
           </div>
           <div>
-            <div style={{ margin: "0px 0px 4px 4px", textAlign: "left" }}>
+            <div style={{ margin: "0px 0px 4px 4px", textAlign: "left", fontStyle: "italic" }}>
               Bạn quên tài khoản ?
             </div>
             <Input placeholder="Mật khẩu" />

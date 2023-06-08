@@ -59,9 +59,11 @@ const Introduction = () => {
           <Col xl={12} lg={24} md={24} sm={24} xs={24}>
             <div style={{ padding: "24px" }}>
               <iframe
+                title="intro"
                 width="100%"
                 height="315"
-                src="https://www.youtube.com/embed/boA99wmJv0I"
+                src="https://www.youtube.com/embed/boA99wmJv0I?autoplay=1&mute=1"
+                allow="autoplay"
               ></iframe>
             </div>
           </Col>
