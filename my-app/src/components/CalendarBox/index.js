@@ -1,6 +1,6 @@
 import React from "react";
 
-const CalendarBox = () => {
+const CalendarBox = ({ style, month, date }) => {
   return (
     <div
       style={{
@@ -9,10 +9,11 @@ const CalendarBox = () => {
         color: "white",
         padding: "12px 4px",
         textTransform: "uppercase",
+        ...style,
       }}
     >
-      <div style={{ fontSize: "12px" }}>Tháng 3</div>
-      <div style={{ fontSize: "28px" }}>19</div>
+      <div style={{ fontSize: "12px" }}>Tháng {month || 3}</div>
+      <div style={{ fontSize: "24px" }}>{date || 19}</div>
     </div>
   );
 };

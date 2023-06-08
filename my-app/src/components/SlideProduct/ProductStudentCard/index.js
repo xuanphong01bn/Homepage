@@ -35,12 +35,13 @@ const ProductStudentCard = ({ title, des, image }) => {
       <div
         id="btn"
         style={{
-          fontSize: "24px",
+          fontSize: "20px",
           textDecoration: "underline",
           color: "#F3C003",
           textAlign: "left",
           fontStyle: "italic",
           marginTop: "24px",
+          cursor: "pointer",
         }}
       >
         Đọc thêm
