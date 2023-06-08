@@ -62,7 +62,7 @@ const Introduction = () => {
               <iframe
                 width="100%"
                 height="315"
-                src="https://www.youtube.com/embed/boA99wmJv0I"
+                src="https://www.youtube.com/embed/boA99wmJv0I?&autoplay=1&mute=1"
               ></iframe>
             </div>
           </Col>
