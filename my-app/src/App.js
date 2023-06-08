@@ -8,6 +8,8 @@ import Introduction from "./sections/Introduction";
 import Project from "./sections/Project";
 import ProductStudent from "./sections/ProductStudent";
 import CourseEvent from "./sections/CourseEvent";
+import Footer from "./sections/Footer";
+
 function App() {
   return (
     <div className="App">
@@ -18,6 +20,7 @@ function App() {
       <Project />
       <ProductStudent />
       <CourseEvent />
+      <Footer />
     </div>
   );
 }

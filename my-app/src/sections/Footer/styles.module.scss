@@ -1,0 +1,56 @@
+.fbIcon{
+    transition: all 0.5s;
+    &:hover{
+        background: #3B5998!important;
+        color: white !important;
+        svg{
+        }
+    }
+}
+.fbIcon:hover svg{
+    fill: white !important;
+
+}
+
+.printest{
+    transition: all 0.5s;
+    &:hover{
+        background: #E53A00!important;
+        color: white !important;
+        svg{
+        }
+    }
+}
+.printest:hover svg{
+    fill: white !important;
+    
+}
+
+.twitter{
+    transition: all 0.5s;
+    &:hover{
+        background: #00ACED!important;
+        color: white !important;
+        svg{
+        }
+    }
+}
+.twitter:hover svg{
+    fill: white !important;
+
+}
+
+.google{
+    transition: all 0.5s;
+    &:hover{
+        background: #E53A00!important;
+        color: white !important;
+        svg{
+        }
+    }
+}
+.google:hover svg{
+    fill: white !important;
+
+}
+

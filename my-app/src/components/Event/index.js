@@ -53,7 +53,7 @@ const Event = () => {
               month={item.month}
               date={item.date}
             />
-            <h4 style={{ margin: "0px" }}>{item.content}</h4>
+            <h4 style={{ margin: "0px", textAlign: "left" }}>{item.content}</h4>
           </div>
         ))}
       </div>
