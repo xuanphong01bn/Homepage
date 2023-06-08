@@ -1,14 +1,18 @@
 import React from "react";
-
-const Button = () => {
+import styles from "./styles.module.scss";
+const ButtonCore = (props) => {
   return (
-    <div>
+    <div style={{ display: "inline-block" }} {...props}>
       <div
         style={{
           backgroundColor: "#F3C003",
-          padding: "18px 24px",
-          borderRadius: "50%",
+          padding: "8px 24px",
+          borderRadius: "50px",
+          fontSize: "16px",
+          color: "white",
+          cursor: "pointer",
         }}
+        className={styles.button}
       >
         Xem thêm
       </div>
@@ -16,4 +20,4 @@ const Button = () => {
   );
 };
 
-export default Button;
+export default ButtonCore;
